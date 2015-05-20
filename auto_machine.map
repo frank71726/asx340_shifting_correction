@@ -1,0 +1,761 @@
+MPLINK 4.44, Linker
+Linker Map File - Created Wed Dec 17 11:24:50 2014
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+           .code___init.o       code   0x000006    program   0x000002
+              isrhighcode       code   0x000008    program   0x000006
+                   .cinit    romdata   0x00000e    program   0x000026
+       .code_mid_aptina.o       code   0x000034    program   0x00047c
+             .code_main.o       code   0x0004b0    program   0x000456
+              .code_i2c.o       code   0x000906    program   0x0001c4
+        .code_interrupt.o       code   0x000aca    program   0x0001b8
+               _cinit_scn       code   0x000c82    program   0x00009e
+           .code_eusart.o       code   0x000d20    program   0x00008e
+            .code_uopen.o       code   0x000dae    program   0x00008a
+          .romdata_main.o    romdata   0x000e38    program   0x000086
+            .code_uputs.o       code   0x000ebe    program   0x00004c
+            .code_uread.o       code   0x000f0a    program   0x00003e
+           .code_t2open.o       code   0x000f48    program   0x000036
+         .code_i2c_open.o       code   0x000f7e    program   0x000036
+           .code_uwrite.o       code   0x000fb4    program   0x00002e
+                    .code       code   0x000fe2    program   0x000020
+             _startup_scn       code   0x001002    program   0x00001c
+           .code_timer2.o       code   0x00101e    program   0x00001c
+        .idata_t2open.o_i    romdata   0x00103a    program   0x000000
+        .romdata___init.o    romdata   0x00103a    program   0x000000
+        .romdata_t2open.o    romdata   0x00103a    program   0x000000
+        .romdata_uwrite.o    romdata   0x00103a    program   0x000000
+        .idata_uwrite.o_i    romdata   0x00103a    program   0x000000
+         .idata_uopen.o_i    romdata   0x00103a    program   0x000000
+         .romdata_uopen.o    romdata   0x00103a    program   0x000000
+         .romdata_udefs.o    romdata   0x00103a    program   0x000000
+         .idata_uread.o_i    romdata   0x00103a    program   0x000000
+         .idata_uputs.o_i    romdata   0x00103a    program   0x000000
+         .romdata_uread.o    romdata   0x00103a    program   0x000000
+         .idata_udefs.o_i    romdata   0x00103a    program   0x000000
+         .romdata_uputs.o    romdata   0x00103a    program   0x000000
+         .romdata_c018i.o    romdata   0x00103a    program   0x000000
+          .idata_main.o_i    romdata   0x00103a    program   0x000020
+             .stringtable    romdata   0x00103a    program   0x000000
+    .idata_mid_aptina.o_i    romdata   0x00103a    program   0x000000
+    .romdata_mid_aptina.o    romdata   0x00103a    program   0x000000
+           .romdata_i2c.o    romdata   0x00103a    program   0x000000
+        .idata_timer2.o_i    romdata   0x00103a    program   0x000000
+        .romdata_timer2.o    romdata   0x00103a    program   0x000000
+     .romdata_interrupt.o    romdata   0x00103a    program   0x000000
+        .romdata_eusart.o    romdata   0x00103a    program   0x000000
+      .romdata_i2c_open.o    romdata   0x00103a    program   0x000000
+     .idata_interrupt.o_i    romdata   0x00105a    program   0x000071
+           .idata_i2c.o_i    romdata   0x0010cb    program   0x000002
+      .idata_i2c_open.o_i    romdata   0x0010cb    program   0x000000
+        .idata_eusart.o_i    romdata   0x0010cd    program   0x000000
+        .idata___init.o_i    romdata   0x0010cd    program   0x000000
+         .idata_c018i.o_i    romdata   0x0010cd    program   0x000000
+            .code_udefs.o       code   0x0010ce    program   0x000000
+            .code_c018i.o       code   0x0010ce    program   0x000000
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x000004
+             isr_high_tmp      udata   0x000004       data   0x000002
+                MATH_DATA      udata   0x000006       data   0x000002
+       .idata_interrupt.o      idata   0x000060       data   0x000071
+            .idata_main.o      idata   0x0000d1       data   0x000020
+           .udata_c018i.o      udata   0x0000f1       data   0x00000a
+             .idata_i2c.o      idata   0x0000fb       data   0x000002
+           .udata_udefs.o      udata   0x0000fd       data   0x000001
+          .idata_t2open.o      idata   0x0000fe       data   0x000000
+           .udata_uopen.o      udata   0x0000fe       data   0x000000
+           .idata_uopen.o      idata   0x0000fe       data   0x000000
+           .udata_uread.o      udata   0x0000fe       data   0x000000
+           .idata_uread.o      idata   0x0000fe       data   0x000000
+           .idata_udefs.o      idata   0x0000fe       data   0x000000
+          .udata_uwrite.o      udata   0x0000fe       data   0x000000
+          .idata_uwrite.o      idata   0x0000fe       data   0x000000
+          .udata___init.o      udata   0x0000fe       data   0x000000
+          .idata___init.o      idata   0x0000fe       data   0x000000
+           .udata_uputs.o      udata   0x0000fe       data   0x000000
+           .idata_uputs.o      idata   0x0000fe       data   0x000000
+          .udata_t2open.o      udata   0x0000fe       data   0x000000
+        .idata_i2c_open.o      idata   0x0000fe       data   0x000000
+        .udata_i2c_open.o      udata   0x0000fe       data   0x000000
+          .idata_eusart.o      idata   0x0000fe       data   0x000000
+          .udata_eusart.o      udata   0x0000fe       data   0x000000
+       .udata_interrupt.o      udata   0x0000fe       data   0x000000
+          .idata_timer2.o      idata   0x0000fe       data   0x000000
+          .udata_timer2.o      udata   0x0000fe       data   0x000000
+             .udata_i2c.o      udata   0x0000fe       data   0x000000
+      .idata_mid_aptina.o      idata   0x0000fe       data   0x000000
+      .udata_mid_aptina.o      udata   0x0000fe       data   0x000000
+            .udata_main.o      udata   0x0000fe       data   0x000000
+           .idata_c018i.o      idata   0x0000fe       data   0x000000
+                   .stack      udata   0x000500       data   0x000100
+            SFR_UNBANKED0      udata   0x000f77       data   0x000089
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0010cc      
+                            0x300001    0x300003      
+                            0x300006    0x300006      
+            4305 out of 33048 program addresses used, program memory utilization is 13%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               ASX340Read   0x0004a0    program     extern Z:\frank-automachine\mid_aptina.c
+              ASX340_data   0x000e6e    program     extern Z:\frank-automachine\automachine_asx340_para.h
+                ASX340_hi   0x000e4e    program     extern Z:\frank-automachine\automachine_asx340_para.h
+                ASX340_lo   0x000e5e    program     extern Z:\frank-automachine\automachine_asx340_para.h
+       ASX340_mirror_data   0x000ea5    program     extern Z:\frank-automachine\automachine_asx340_para.h
+         ASX340_mirror_hi   0x000e9b    program     extern Z:\frank-automachine\automachine_asx340_para.h
+         ASX340_mirror_lo   0x000ea0    program     extern Z:\frank-automachine\automachine_asx340_para.h
+        ASX340_mirror_num   0x000eaf    program     extern Z:\frank-automachine\automachine_asx340_para.h
+    ASX340_no_mirror_data   0x000eb4    program     extern Z:\frank-automachine\automachine_asx340_para.h
+               ASX340_num   0x000e8b    program     extern Z:\frank-automachine\automachine_asx340_para.h
+                 I2CDelay   0x000906    program     static Z:\frank-automachine\i2c.c
+                I2CDlyClr   0x000930    program     static Z:\frank-automachine\i2c.c
+                 I2C_Done   0x000a96    program     extern Z:\frank-automachine\i2c.c
+                  IdleI2C   0x000968    program     extern Z:\frank-automachine\i2c.c
+    Initialize_I2C_Master   0x000ab0    program     static Z:\frank-automachine\i2c.c
+            McuEusartInit   0x000daa    program     extern Z:\frank-automachine\eusart.c
+              McuEusartWr   0x000d88    program     extern Z:\frank-automachine\eusart.c
+       McuGetUartFifoData   0x000b20    program     extern Z:\frank-automachine\interrupt.c
+       McuGetUartFifoFlag   0x000b26    program     extern Z:\frank-automachine\interrupt.c
+               McuI2CInit   0x000ac6    program     extern Z:\frank-automachine\i2c.c
+                  McuInit   0x000602    program     static Z:\frank-automachine\main.c
+             McuTimerInit   0x001036    program     extern Z:\frank-automachine\timer2.c
+                NotAckI2C   0x000936    program     extern Z:\frank-automachine\i2c.c
+                  OpenI2C   0x000f7e    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_open.c
+               OpenTimer2   0x000f48    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\Timers\t2open.c
+                OpenUSART   0x000dae    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+       RamWriteCmosConfig   0x00044a    program     extern Z:\frank-automachine\mid_aptina.c
+                  ReadI2C   0x000982    program     extern Z:\frank-automachine\i2c.c
+                ReadUSART   0x000f0a    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
+               Send_CR_LF   0x000d20    program     static Z:\frank-automachine\eusart.c
+               SensorInit   0x0004b0    program     static Z:\frank-automachine\main.c
+                 StartI2C   0x000954    program     extern Z:\frank-automachine\i2c.c
+                  StopI2C   0x000946    program     extern Z:\frank-automachine\i2c.c
+               Time2Count   0x000b2c    program     extern Z:\frank-automachine\interrupt.c
+                TimerInit   0x00101e    program     static Z:\frank-automachine\timer2.c
+          WriteCmosConfig   0x0003f4    program     extern Z:\frank-automachine\mid_aptina.c
+                 WriteI2C   0x000a1a    program     extern Z:\frank-automachine\i2c.c
+               WriteUSART   0x000fb4    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
+         ___else_lbl00004   0x00013e    program     static                          
+         ___else_lbl00006   0x0001d6    program     static                          
+         ___else_lbl00013   0x00031a    program     static                          
+         ___else_lbl00015   0x0003b0    program     static                          
+          ___for_lbl00001   0x0001fa    program     static                          
+          ___for_lbl00002   0x000206    program     static                          
+          ___for_lbl00008   0x000050    program     static                          
+          ___for_lbl00010   0x0003d4    program     static                          
+          ___for_lbl00011   0x0003e0    program     static                          
+          ___for_lbl00017   0x000236    program     static                          
+           ___if_lbl00001   0x00092e    program     static                          
+           ___if_lbl00003   0x000168    program     static                          
+           ___if_lbl00005   0x0001e8    program     static                          
+           ___if_lbl00007   0x0001fa    program     static                          
+           ___if_lbl00012   0x000342    program     static                          
+           ___if_lbl00014   0x0003c2    program     static                          
+           ___if_lbl00016   0x0003d4    program     static                          
+       ___return_lbl00000   0x00092e    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x000206    program     static                          
+       ___return_lbl00001   0x00101c    program     static                          
+       ___return_lbl00002   0x000d1e    program     static                          
+       ___return_lbl00009   0x000966    program     static                          
+       ___return_lbl00009   0x0003e0    program     static                          
+       ___return_lbl00011   0x00000c    program     static                          
+       ___return_lbl00012   0x000980    program     static                          
+       ___return_lbl00049   0x000aae    program     static                          
+        ___while_lbl00010   0x000956    program     static                          
+        ___while_lbl00011   0x00095e    program     static                          
+        ___while_lbl00013   0x000968    program     static                          
+        ___while_lbl00014   0x000978    program     static                          
+        ___while_lbl00050   0x000a96    program     static                          
+        ___while_lbl00051   0x000aa4    program     static                          
+       __automachineclass   0x000e38    program     extern Z:\frank-automachine\mid_api.h
+               __config_0   0x300001    program     static Z:\frank-automachine\main.c
+               __config_1   0x300002    program     static Z:\frank-automachine\main.c
+               __config_2   0x300003    program     static Z:\frank-automachine\main.c
+               __config_3   0x300006    program     static Z:\frank-automachine\main.c
+                   __init   0x000006    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __tmplbl_0   0x000974    program     static                          
+               __tmplbl_1   0x00096e    program     static                          
+            __zero_memory   0x000fe2    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                _do_cinit   0x000c82    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 _startup   0x001002    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x000ff8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                copy_loop   0x000cf4    program     static                          
+            copy_one_byte   0x000cfa    program     static                          
+         display_terminal   0x000d3e    program     static Z:\frank-automachine\eusart.c
+                     done   0x000d1e    program     static                          
+             done_copying   0x000d08    program     static                          
+       get_uart_fifo_data   0x000aca    program     static Z:\frank-automachine\interrupt.c
+       get_uart_fifo_flag   0x000b16    program     static Z:\frank-automachine\interrupt.c
+                  getsI2C   0x0009a4    program     extern Z:\frank-automachine\i2c.c
+         initialize_usart   0x000d64    program     static Z:\frank-automachine\eusart.c
+                 isr_high   0x000b54    program     extern Z:\frank-automachine\interrupt.c
+          isr_high_direct   0x000008    program     extern Z:\frank-automachine\interrupt.c
+                     loop   0x001012    program     static                          
+                   loop_h   0x000ff0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   loop_l   0x000ffa    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     main   0x000684    program     extern Z:\frank-automachine\main.c
+                putsUSART   0x000ebe    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uputs.c
+     ram_write_cmos_value   0x00021a    program     static Z:\frank-automachine\mid_aptina.c
+                     test   0x000c9c    program     static                          
+         write_cmos_value   0x000034    program     static Z:\frank-automachine\mid_aptina.c
+               zero_block   0x000ff0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADCON0   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ADCON0bits   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADCON1   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ADCON1bits   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADCON2   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ADCON2bits   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    ADRES   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADRESH   0x000fc4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADRESL   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    ANSEL   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ANSELH   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ANSELHbits   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                ANSELbits   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+       ASX340_offset_data   0x0000e6       data     extern Z:\frank-automachine\main.c
+         ASX340_offset_hi   0x0000de       data     extern Z:\frank-automachine\main.c
+         ASX340_offset_lo   0x0000e2       data     extern Z:\frank-automachine\main.c
+        ASX340_offset_num   0x0000ed       data     extern Z:\frank-automachine\main.c
+                  BAUDCON   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              BAUDCONbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  BAUDCTL   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              BAUDCTLbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      BSR   0x000fe0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CCP1CON   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CCP1CONbits   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CCP2CON   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CCP2CONbits   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    CCPR1   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR1H   0x000fbf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR1L   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    CCPR2   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR2H   0x000fbc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR2L   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CM1CON0   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CM1CON0bits   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CM2CON0   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CM2CON0bits   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CM2CON1   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CM2CON1bits   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CVRCON   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CVRCON2   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CVRCON2bits   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               CVRCONbits   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     DDRA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 DDRAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     DDRB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 DDRBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     DDRC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 DDRCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  ECCP1AS   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              ECCP1ASbits   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    EEADR   0x000fa9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                EEADRbits   0x000fa9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   EECON1   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               EECON1bits   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   EECON2   0x000fa7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   EEDATA   0x000fa8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     FSR0   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR0H   0x000fea       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR0L   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     FSR1   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR1H   0x000fe2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR1L   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     FSR2   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR2H   0x000fda       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR2L   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  HLVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              HLVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    INDF0   0x000fef       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    INDF1   0x000fe7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    INDF2   0x000fdf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   INTCON   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  INTCON2   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              INTCON2bits   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  INTCON3   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              INTCON3bits   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               INTCONbits   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     IOCB   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 IOCBbits   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     IPR1   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 IPR1bits   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     IPR2   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 IPR2bits   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     LATA   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 LATAbits   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     LATB   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 LATBbits   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     LATC   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 LATCbits   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   LVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               LVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 MSG_init   0x0000d1       data     extern Z:\frank-automachine\main.c
+                   OSCCON   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               OSCCONbits   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  OSCTUNE   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              OSCTUNEbits   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                       PC   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      PCL   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PCLATH   0x000ffa       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PCLATU   0x000ffb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIE1   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIE1bits   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIE2   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIE2bits   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIR1   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIR1bits   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIR2   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIR2bits   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PLUSW0   0x000feb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PLUSW1   0x000fe3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PLUSW2   0x000fdb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTA   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTAbits   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTB   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTBbits   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTC   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTCbits   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTE   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTEbits   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTDEC0   0x000fed       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTDEC1   0x000fe5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTDEC2   0x000fdd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTINC0   0x000fee       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTINC1   0x000fe6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTINC2   0x000fde       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      PR2   0x000fcb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PREINC0   0x000fec       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PREINC1   0x000fe4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PREINC2   0x000fdc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PROD   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PRODH   0x000ff4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PRODL   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PSTRCON   0x000fb9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              PSTRCONbits   0x000fb9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PWM1CON   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              PWM1CONbits   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     RCON   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 RCONbits   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    RCREG   0x000fae       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    RCSTA   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                RCSTAbits   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     SIGN   0x000006       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                   SLRCON   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               SLRCONbits   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    SPBRG   0x000faf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SPBRGH   0x000fb0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SSPADD   0x000fc8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SSPBUF   0x000fc9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  SSPCON1   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              SSPCON1bits   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  SSPCON2   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              SSPCON2bits   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SSPMSK   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               SSPMSKbits   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  SSPSTAT   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              SSPSTATbits   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   STATUS   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               STATUSbits   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   STKPTR   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               STKPTRbits   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T0CON   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T0CONbits   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T1CON   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T1CONbits   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T2CON   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T2CONbits   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T3CON   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T3CONbits   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   TABLAT   0x000ff5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   TBLPTR   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  TBLPTRH   0x000ff7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  TBLPTRL   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  TBLPTRU   0x000ff8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR0H   0x000fd7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR0L   0x000fd6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR1H   0x000fcf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR1L   0x000fce       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TMR2   0x000fcc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR3H   0x000fb3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR3L   0x000fb2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      TOS   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TOSH   0x000ffe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TOSL   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TOSU   0x000fff       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TRISA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TRISAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TRISB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TRISBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TRISC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TRISCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TXREG   0x000fad       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TXSTA   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TXSTAbits   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+             USART_Status   0x0000fd       data     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\udefs.c
+                        W   0x000fe8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   WDTCON   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               WDTCONbits   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     WPUB   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 WPUBbits   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     WREG   0x000fe8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                __FPFLAGS   0x000007       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000007       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __tmp_0   0x000000       data     static Z:\frank-automachine\mid_aptina.c
+                  __tmp_0   0x000000       data     static Z:\frank-automachine\main.c
+                  __tmp_0   0x000000       data     static D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                  __tmp_1   0x000004       data     static Z:\frank-automachine\interrupt.c
+                    count   0x0000cf       data     static Z:\frank-automachine\interrupt.c
+                curr_byte   0x0000f4       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000f6       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000f8       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                gTimeFalg   0x0000cc       data     static Z:\frank-automachine\interrupt.c
+              gTimerCount   0x0000cd       data     static Z:\frank-automachine\interrupt.c
+              i2c_dly_num   0x0000fb       data     static Z:\frank-automachine\i2c.c
+             i2c_dly_num1   0x0000fc       data     static Z:\frank-automachine\i2c.c
+                     prom   0x0000f1       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                  rx_fifo   0x000060       data     extern Z:\frank-automachine\interrupt.c
+                  tx_fifo   0x000096       data     extern Z:\frank-automachine\interrupt.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                   __init   0x000006    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+          isr_high_direct   0x000008    program     extern Z:\frank-automachine\interrupt.c
+       ___return_lbl00011   0x00000c    program     static                          
+         write_cmos_value   0x000034    program     static Z:\frank-automachine\mid_aptina.c
+          ___for_lbl00008   0x000050    program     static                          
+         ___else_lbl00004   0x00013e    program     static                          
+           ___if_lbl00003   0x000168    program     static                          
+         ___else_lbl00006   0x0001d6    program     static                          
+           ___if_lbl00005   0x0001e8    program     static                          
+           ___if_lbl00007   0x0001fa    program     static                          
+          ___for_lbl00001   0x0001fa    program     static                          
+       ___return_lbl00000   0x000206    program     static                          
+          ___for_lbl00002   0x000206    program     static                          
+     ram_write_cmos_value   0x00021a    program     static Z:\frank-automachine\mid_aptina.c
+          ___for_lbl00017   0x000236    program     static                          
+         ___else_lbl00013   0x00031a    program     static                          
+           ___if_lbl00012   0x000342    program     static                          
+         ___else_lbl00015   0x0003b0    program     static                          
+           ___if_lbl00014   0x0003c2    program     static                          
+           ___if_lbl00016   0x0003d4    program     static                          
+          ___for_lbl00010   0x0003d4    program     static                          
+          ___for_lbl00011   0x0003e0    program     static                          
+       ___return_lbl00009   0x0003e0    program     static                          
+          WriteCmosConfig   0x0003f4    program     extern Z:\frank-automachine\mid_aptina.c
+       RamWriteCmosConfig   0x00044a    program     extern Z:\frank-automachine\mid_aptina.c
+               ASX340Read   0x0004a0    program     extern Z:\frank-automachine\mid_aptina.c
+               SensorInit   0x0004b0    program     static Z:\frank-automachine\main.c
+                  McuInit   0x000602    program     static Z:\frank-automachine\main.c
+                     main   0x000684    program     extern Z:\frank-automachine\main.c
+                 I2CDelay   0x000906    program     static Z:\frank-automachine\i2c.c
+           ___if_lbl00001   0x00092e    program     static                          
+       ___return_lbl00000   0x00092e    program     static                          
+                I2CDlyClr   0x000930    program     static Z:\frank-automachine\i2c.c
+                NotAckI2C   0x000936    program     extern Z:\frank-automachine\i2c.c
+                  StopI2C   0x000946    program     extern Z:\frank-automachine\i2c.c
+                 StartI2C   0x000954    program     extern Z:\frank-automachine\i2c.c
+        ___while_lbl00010   0x000956    program     static                          
+        ___while_lbl00011   0x00095e    program     static                          
+       ___return_lbl00009   0x000966    program     static                          
+        ___while_lbl00013   0x000968    program     static                          
+                  IdleI2C   0x000968    program     extern Z:\frank-automachine\i2c.c
+               __tmplbl_1   0x00096e    program     static                          
+               __tmplbl_0   0x000974    program     static                          
+        ___while_lbl00014   0x000978    program     static                          
+       ___return_lbl00012   0x000980    program     static                          
+                  ReadI2C   0x000982    program     extern Z:\frank-automachine\i2c.c
+                  getsI2C   0x0009a4    program     extern Z:\frank-automachine\i2c.c
+                 WriteI2C   0x000a1a    program     extern Z:\frank-automachine\i2c.c
+        ___while_lbl00050   0x000a96    program     static                          
+                 I2C_Done   0x000a96    program     extern Z:\frank-automachine\i2c.c
+        ___while_lbl00051   0x000aa4    program     static                          
+       ___return_lbl00049   0x000aae    program     static                          
+    Initialize_I2C_Master   0x000ab0    program     static Z:\frank-automachine\i2c.c
+               McuI2CInit   0x000ac6    program     extern Z:\frank-automachine\i2c.c
+       get_uart_fifo_data   0x000aca    program     static Z:\frank-automachine\interrupt.c
+       get_uart_fifo_flag   0x000b16    program     static Z:\frank-automachine\interrupt.c
+       McuGetUartFifoData   0x000b20    program     extern Z:\frank-automachine\interrupt.c
+       McuGetUartFifoFlag   0x000b26    program     extern Z:\frank-automachine\interrupt.c
+               Time2Count   0x000b2c    program     extern Z:\frank-automachine\interrupt.c
+                 isr_high   0x000b54    program     extern Z:\frank-automachine\interrupt.c
+                _do_cinit   0x000c82    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000c9c    program     static                          
+                copy_loop   0x000cf4    program     static                          
+            copy_one_byte   0x000cfa    program     static                          
+             done_copying   0x000d08    program     static                          
+       ___return_lbl00002   0x000d1e    program     static                          
+                     done   0x000d1e    program     static                          
+               Send_CR_LF   0x000d20    program     static Z:\frank-automachine\eusart.c
+         display_terminal   0x000d3e    program     static Z:\frank-automachine\eusart.c
+         initialize_usart   0x000d64    program     static Z:\frank-automachine\eusart.c
+              McuEusartWr   0x000d88    program     extern Z:\frank-automachine\eusart.c
+            McuEusartInit   0x000daa    program     extern Z:\frank-automachine\eusart.c
+                OpenUSART   0x000dae    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+       __automachineclass   0x000e38    program     extern Z:\frank-automachine\mid_api.h
+                ASX340_hi   0x000e4e    program     extern Z:\frank-automachine\automachine_asx340_para.h
+                ASX340_lo   0x000e5e    program     extern Z:\frank-automachine\automachine_asx340_para.h
+              ASX340_data   0x000e6e    program     extern Z:\frank-automachine\automachine_asx340_para.h
+               ASX340_num   0x000e8b    program     extern Z:\frank-automachine\automachine_asx340_para.h
+         ASX340_mirror_hi   0x000e9b    program     extern Z:\frank-automachine\automachine_asx340_para.h
+         ASX340_mirror_lo   0x000ea0    program     extern Z:\frank-automachine\automachine_asx340_para.h
+       ASX340_mirror_data   0x000ea5    program     extern Z:\frank-automachine\automachine_asx340_para.h
+        ASX340_mirror_num   0x000eaf    program     extern Z:\frank-automachine\automachine_asx340_para.h
+    ASX340_no_mirror_data   0x000eb4    program     extern Z:\frank-automachine\automachine_asx340_para.h
+                putsUSART   0x000ebe    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uputs.c
+                ReadUSART   0x000f0a    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uread.c
+               OpenTimer2   0x000f48    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\Timers\t2open.c
+                  OpenI2C   0x000f7e    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\i2c\i2c_open.c
+               WriteUSART   0x000fb4    program     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uwrite.c
+            __zero_memory   0x000fe2    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   loop_h   0x000ff0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               zero_block   0x000ff0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                compare_l   0x000ff8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   loop_l   0x000ffa    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 _startup   0x001002    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x001012    program     static                          
+       ___return_lbl00001   0x00101c    program     static                          
+                TimerInit   0x00101e    program     static Z:\frank-automachine\timer2.c
+             McuTimerInit   0x001036    program     extern Z:\frank-automachine\timer2.c
+               __config_0   0x300001    program     static Z:\frank-automachine\main.c
+               __config_1   0x300002    program     static Z:\frank-automachine\main.c
+               __config_2   0x300003    program     static Z:\frank-automachine\main.c
+               __config_3   0x300006    program     static Z:\frank-automachine\main.c
+                  __tmp_0   0x000000       data     static Z:\frank-automachine\mid_aptina.c
+                  __tmp_0   0x000000       data     static Z:\frank-automachine\main.c
+                  __tmp_0   0x000000       data     static D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\uopen.c
+                  __tmp_1   0x000004       data     static Z:\frank-automachine\interrupt.c
+                     SIGN   0x000006       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000007       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000007       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  rx_fifo   0x000060       data     extern Z:\frank-automachine\interrupt.c
+                  tx_fifo   0x000096       data     extern Z:\frank-automachine\interrupt.c
+                gTimeFalg   0x0000cc       data     static Z:\frank-automachine\interrupt.c
+              gTimerCount   0x0000cd       data     static Z:\frank-automachine\interrupt.c
+                    count   0x0000cf       data     static Z:\frank-automachine\interrupt.c
+                 MSG_init   0x0000d1       data     extern Z:\frank-automachine\main.c
+         ASX340_offset_hi   0x0000de       data     extern Z:\frank-automachine\main.c
+         ASX340_offset_lo   0x0000e2       data     extern Z:\frank-automachine\main.c
+       ASX340_offset_data   0x0000e6       data     extern Z:\frank-automachine\main.c
+        ASX340_offset_num   0x0000ed       data     extern Z:\frank-automachine\main.c
+                     prom   0x0000f1       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0000f4       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000f6       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000f8       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              i2c_dly_num   0x0000fb       data     static Z:\frank-automachine\i2c.c
+             i2c_dly_num1   0x0000fc       data     static Z:\frank-automachine\i2c.c
+             USART_Status   0x0000fd       data     extern D:\3.43\pic18-lt\cxx-framework\src\pmc_common\USART\udefs.c
+               SSPMSKbits   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SSPMSK   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               SLRCONbits   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SLRCON   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CM2CON1   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CM2CON1bits   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CM2CON0   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CM2CON0bits   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CM1CON0   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CM1CON0bits   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 WPUBbits   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     WPUB   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     IOCB   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 IOCBbits   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    ANSEL   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                ANSELbits   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ANSELH   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ANSELHbits   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTAbits   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTA   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTBbits   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTB   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTC   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTCbits   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                PORTEbits   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PORTE   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 LATAbits   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     LATA   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 LATBbits   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     LATB   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 LATCbits   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     LATC   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TRISA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     DDRA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 DDRAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TRISAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TRISBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TRISB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 DDRBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     DDRB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     DDRC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 DDRCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TRISCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TRISC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              OSCTUNEbits   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  OSCTUNE   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIE1bits   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIE1   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIR1bits   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIR1   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 IPR1bits   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     IPR1   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIE2bits   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIE2   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PIR2   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 PIR2bits   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     IPR2   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 IPR2bits   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   EECON1   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               EECON1bits   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   EECON2   0x000fa7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   EEDATA   0x000fa8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                EEADRbits   0x000fa9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    EEADR   0x000fa9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                RCSTAbits   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    RCSTA   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TXSTA   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                TXSTAbits   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TXREG   0x000fad       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    RCREG   0x000fae       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    SPBRG   0x000faf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SPBRGH   0x000fb0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T3CONbits   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T3CON   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR3L   0x000fb2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR3H   0x000fb3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CVRCON2bits   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CVRCON2   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               CVRCONbits   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CVRCON   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              ECCP1ASbits   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  ECCP1AS   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PWM1CON   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              PWM1CONbits   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              BAUDCTLbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  BAUDCTL   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  BAUDCON   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              BAUDCONbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              PSTRCONbits   0x000fb9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PSTRCON   0x000fb9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CCP2CON   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CCP2CONbits   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    CCPR2   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR2L   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR2H   0x000fbc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  CCP1CON   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              CCP1CONbits   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    CCPR1   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR1L   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   CCPR1H   0x000fbf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADCON2   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ADCON2bits   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADCON1   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ADCON1bits   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADCON0   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               ADCON0bits   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    ADRES   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADRESL   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   ADRESH   0x000fc4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              SSPCON2bits   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  SSPCON2   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              SSPCON1bits   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  SSPCON1   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              SSPSTATbits   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  SSPSTAT   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SSPADD   0x000fc8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   SSPBUF   0x000fc9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T2CON   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T2CONbits   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      PR2   0x000fcb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TMR2   0x000fcc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T1CONbits   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T1CON   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR1L   0x000fce       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR1H   0x000fcf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 RCONbits   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     RCON   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               WDTCONbits   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   WDTCON   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              HLVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  HLVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               LVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   LVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               OSCCONbits   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   OSCCON   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    T0CON   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                T0CONbits   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR0L   0x000fd6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    TMR0H   0x000fd7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   STATUS   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               STATUSbits   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR2L   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     FSR2   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR2H   0x000fda       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PLUSW2   0x000fdb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PREINC2   0x000fdc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTDEC2   0x000fdd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTINC2   0x000fde       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    INDF2   0x000fdf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      BSR   0x000fe0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     FSR1   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR1L   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR1H   0x000fe2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PLUSW1   0x000fe3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PREINC1   0x000fe4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTDEC1   0x000fe5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTINC1   0x000fe6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    INDF1   0x000fe7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     WREG   0x000fe8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                        W   0x000fe8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     FSR0   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR0L   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    FSR0H   0x000fea       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PLUSW0   0x000feb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  PREINC0   0x000fec       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTDEC0   0x000fed       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                 POSTINC0   0x000fee       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    INDF0   0x000fef       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              INTCON3bits   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  INTCON3   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+              INTCON2bits   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  INTCON2   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   INTCON   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               INTCONbits   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PRODL   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     PROD   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                    PRODH   0x000ff4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   TABLAT   0x000ff5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  TBLPTRL   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   TBLPTR   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  TBLPTRH   0x000ff7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                  TBLPTRU   0x000ff8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                       PC   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      PCL   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PCLATH   0x000ffa       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   PCLATU   0x000ffb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                   STKPTR   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+               STKPTRbits   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TOSL   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                      TOS   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TOSH   0x000ffe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+                     TOSU   0x000fff       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f25k20.asm
+
+
